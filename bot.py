@@ -108,8 +108,8 @@ def play_rps(chat_id, choice):
 # ============ ИГРА 3: УГАДАЙ СЛОВО ============
 def start_word(chat_id):
     word = random.choice(WORDS)
-    users[chat_id] = {'game': 'word', 'word': word, 'attempts': 5}
-    bot.send_message(chat_id, f"📝 Я загадал слово из 5 букв. У тебя 5 попыток!\nВведи слово:", reply_markup=back_button())
+    users[chat_id] = {'game': 'word', 'word': word, 'attempts': 8}
+    bot.send_message(chat_id, f"📝 Я загадал слово из 5 букв. У тебя 8 попыток!\nВведи слово:", reply_markup=back_button())
 
 def get_hint(secret_word, guessed_word):
     hint = []
